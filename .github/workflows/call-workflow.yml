@@ -6,7 +6,7 @@ on:
 
 jobs:
  call-workflow:
-    uses: santander-group/test-workflow-reusable/.github/workflows/ci-cd.yml@main
+    uses: jbenaventem/test-workflow-reusable/.github/workflows/ci-cd.yml@main
 
     with:
       project: app-test
