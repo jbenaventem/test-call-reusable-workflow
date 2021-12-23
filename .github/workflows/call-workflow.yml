@@ -1,0 +1,13 @@
+name: On push for app
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+ call-workflow:
+    uses: santander-group/test-workflow-reusable/.github/workflows/ci-cd.yml@main
+
+    with:
+      project: app
+      target: ${{ github.ref_name }}
