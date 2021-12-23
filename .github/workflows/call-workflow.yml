@@ -9,5 +9,5 @@ jobs:
     uses: santander-group/test-workflow-reusable/.github/workflows/ci-cd.yml@main
 
     with:
-      project: app
+      project: app-test
       target: ${{ github.ref_name }}
